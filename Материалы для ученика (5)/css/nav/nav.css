@@ -1,0 +1,74 @@
+.nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 50px 70px;
+    background: var(--font-color2);
+}
+.nav__menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__input{
+    position: fixed;
+    visibility: hidden;
+} 
+.nav__input:checked ~ .nav__products{
+    height: 0;
+    margin-top: 0;
+    overflow: hidden;
+}
+.nav__products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    height: calc(2rem + 30px);
+    transition: 0.8s;
+    transform-origin: top;
+}
+.product{
+    text-decoration: none;
+    color: var(--font-color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product__name{
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.product__name:hover{
+    color: var(--active-color);
+}
+.product__img{
+    width: 30%;
+}
+.menu__btn{
+    color: var(--active-color);
+    font-size: 1rem;
+    margin-right: 55px;
+    cursor: pointer;
+}
+.menu__btn::before{
+    content: "";
+    background: url("img/menu-open-arrow.svg") center/cover no-repeat;
+    height: 30px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    left: 74%;
+    top: 23%;
+    transition: 1s;
+    cursor: pointer;
+}
+.nav__input:checked ~ .nav__menu .menu__buttons .menu__btn::before{
+    top: 40%;
+    transform: rotateX(180deg);
+}

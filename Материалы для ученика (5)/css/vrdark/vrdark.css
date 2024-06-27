@@ -1,0 +1,83 @@
+.dark__container {
+    padding: 20px 120px;
+    background: #2c2a32;
+    display: grid; 
+    gap: 25px;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: "i1 i1" "i2 i2" "i3 i3" "i4 ." "i4 i5";
+    color: var(--font-color2);
+}
+.dark__it {
+    display: flex;
+    justify-content: space-between;
+}
+.di1 {
+    grid-area: i1;
+}
+.dark__img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 40%;
+}
+.dk__subtitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.di1 .dk__title, .di2 .dk__title, .di3 .dk__title{
+    font-size: 3rem;
+    align-self: flex-end;
+    text-align: right;
+    width: 50%;
+}
+.dk__hr {
+    height: 3px;
+    width: 100%;
+    opacity: 1;
+}
+.di2 {
+    grid-area: i2;
+}
+.dk__text {
+    font-size: 1rem;
+    align-self: flex-end;
+    width: 60%;
+    text-align: right;
+}
+.di3 {
+    grid-area: i3;
+}
+.di4 {
+    grid-area: i4;
+    background: var(--font-color2);
+    color: var(--font-color1);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.di4 .dk__title{
+    font-size: 2rem;
+}
+.di4 .dk__text{
+    align-self: flex-start;
+    text-align: left;
+    width: 80%;
+}
+.di5 {
+    grid-area: i5;
+    background: radial-gradient(191.13% 141.42% at 0% 0%, #FF450B 0%, #B462F4 100%);
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px;
+    color: var(--font-color2);
+}
+.di5 .dk__title{
+    font-size: 2rem;
+    width: 50%;
+    text-align: right;
+}
+.dark__btn {
+    width: 300px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Файлы проекта/img/favicon.ico">
+    <title>Document</title>
+</head>
+<body>
+<div class="form__container">
+    <h2 class="form__title">Оформить заказ</h2>
+    <hr class="form__hr">
+    <form action="#" class="form">
+        <div>
+            <label for="email" class="form__label">Email</label>
+            <input id="email" type="email" placeholder="sample@mail.com" name="email" class="form-control">
+        </div>
+        <div class="">
+            <label for="adress" class="form__label">Адрес</label>
+            <input id="adress" type="text" placeholder="Санкт-Петербург, ул Московская 23" name="adress" class="form-control">
+        </div>
+        <p class="form__label">Добавить к заказу</p>
+        <div class="">
+           <input id="case" type="checkbox" class=".form-check">
+           <label for="case" class="check__label">Кейс</label>
+        </div>
+        <div class="">
+            <input id="frame" type="checkbox" class=".form-check">
+            <label for="frame" class="check__label">Оправу</label>
+        </div>
+        <div class="">
+            <input id="usb" type="checkbox" class=".form-check">
+            <label for="usb" class="check__label">Кабель зарядки</label>
+        </div>
+        <div class="">
+            <input id="pwbank" type="checkbox" class=".form-check">
+            <label for="pwbank" class="check__label">Беспроводная зарядка</label>
+        </div>
+        <div class="">
+            <label for="country" class="form__label">Страна доставки</label>
+            <input id="country" type="text" placeholder="Россия" name="country" class="form-control">
+        </div>
+        <button class="form__btn btn btn-primary">Оформить</button>
+    </form>
+</div>
+</body>
+</html>

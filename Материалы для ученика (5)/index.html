@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Файлы проекта/img/favicon.ico">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <input id="check" type="checkbox" class="nav__input" checked>
+        <div class="nav__menu">
+            <a href="" class="nav__logo">
+                <img src="img/site-logo.svg" alt="" class="nav__logo-img">
+            </a>
+            <div class="menu__buttons">
+                <label for="check" class="menu__btn">Продукция</label>
+                <a href="form.html" class="menu__buy btn btn-primary">Купить</a>
+            </div>           
+        </div>
+        <div class="nav__products">
+            <a href="#" class="product">
+                <img src="img/menu-item1.svg" alt="" class="product__img">
+                <p class="product__name">VR glasses light</p>
+            </a>
+            <a href="#" class="product">
+                <img src="img/menu-item2.svg" alt="" class="product__img">
+                <p class="product__name">VR glasses Pro</p>
+            </a>
+            <a href="#" class="product">
+                <img src="img/menu-item3.svg" alt="" class="product__img">
+                <p class="product__name">Аксессуары</p>
+            </a>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="header__content">
+            <h1 class="content__title">VR Гарнитуры для дома и разработки</h1>
+            <p class="content__subtitle">Соревнуйся с друзями, работай и разрабатывай в VR. Приобретай одну из двух гарнитур и уже завтра тебе ее доставят</p>
+            <div class="header__grafics">
+                <div class="header__circle"></div>
+                <div class="header__circle1"></div>
+                <img src="img/header-img.png" alt="" class="bg__photo">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="products">
+            <div class="products__container">
+                <h2 class="products__title">Продукция</h2>
+                <hr class="products__hr">
+                <ul class="products__list">
+                    <li class="pd__item it1">
+                        <h3 class="item__title">VR Glasses light</h3>
+                        <p class="pd__text">Самые популярные очки. Сочетание легкости, комфорта и отличных характеристик. По доступной цене</p>
+                        <a href="vrlignt.html" class="pd__btn btn btn-primary">Подробнее</a>
+                    </li>
+                    <li class="pd__item it2">
+                        <h3 class="item__title">Аксессуары</h3>
+                        <a href="acs.html" class="pd__btn btn btn-primary">Подробнее</a>
+                    </li>
+                    <li class="pd__item it3">
+                        <h3 class="item__title">VRSOFT Маркет</h3>
+                        <p class="pd__text">Игры и приложения для ваших очков</p>
+                        <a href="#" class="pd__btn btn btn-primary">Подробнее</a>
+                    </li>
+                    <li class="pd__item it4">
+                        <h3 class="item__title">VR Glasses PRO</h3>
+                        <p class="pd__text">Бескомпромиссная мощность и красота. Самые современные технологии для реализации ваших идей</p>
+                        <a href="vrdark.html" class="pd__btn btn btn-primary">Подробнее</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video__container">
+                <video src="video/video.mp4" muted autoplay loop></video>
+            </div>
+        </section>
+        <section class="opportunities">
+            <div class="oppo__container">
+                <h2 class="oppo__title">Возмо<br>жности</h2>
+                <hr class="oppo__hr">
+                <div class="oppo__content">
+                    <input id="fitnes" type="radio" name="radio" class="oppo__radio" checked>
+                    <input id="work" type="radio" name="radio" class="oppo__radio1">
+                    <input id="play" type="radio" name="radio" class="oppo__radio2">
+                    <input id="school" type="radio" name="radio" class="oppo__radio3">
+                    <div class="oppo__btn">
+                        <label for="fitnes" class="oppo__label">Фитнес</label>
+                        <label for="work" class="oppo__label">Работа</label>
+                        <label for="play" class="oppo__label">Развлечения</label>
+                        <label for="school" class="oppo__label">Образование</label>
+                    </div>
+                    <ul class="oppo__list">
+                        <li class="oppo__item"><span class="oppo__span">Используйте шлем для своих тренировок. Миллионы разных сценариев, для комплексоной поддержки и развития тела</span></li>
+                        <li class="oppo__item"><span class="oppo__span">Создай рабочее пространство мечты. Работай на орбите марса или на вершине Альп. Виртуальные офисы, боты и  множество других программ для организации работы в VR</span></li>
+                        <li class="oppo__item"><span class="oppo__span">Сотни игр и развлечений для любых возрастов. Встроенный магазин с доступом напрямую из шлема</span></li>
+                        <li class="oppo__item"><span class="oppo__span">Обучайся и изучай с VR. Возможность строить изучать механизмы и проводить опыты без вреда для жизни и с виртуальными помощниками</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="other">
+            <div class="other__container">
+                <ul class="other__list">
+                    <li class="other__card cd1">
+                        <h3 class="other__title">Блог о VR</h3>
+                        <p class="other__text">Узнай о новость в Vr первым, читая наш блог</p>
+                    </li>
+                    <li class="other__card cd2">
+                        <h3 class="other__title">VR Workspace</h3>
+                        <p class="other__text">Истории о том, как люди покидают офисы и работают в VR пространстве</p>
+                    </li>
+                    <li class="other__card cd3">
+                        <h3 class="other__title">Наша компания</h3>
+                        <p class="other__text">Хочешь узнать о нас больше? Культура, работа и отдых в компании</p>
+                    </li>
+                    <li class="other__card cd4">
+                        <h3 class="other__title">И многое другое</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__top">
+                <div class="foot__content">
+                    <h2 class="foot__subtitle">VR QUEST</h2>
+                    <p class="foot__text">Связаться с нами</p>
+                    <p class="foot__text">Вакансии</p>
+                    <p class="foot__text">Часто задаваемые вопросы</p>
+                </div>
+                <div class="foot__content">
+                    <h2 class="foot__subtitle">VR GAMES</h2>
+                    <p class="foot__text">Разработка</p>
+                    <p class="foot__text">Наборы для разработчиков</p>
+                </div>
+                <div class="foot__content">
+                    <h2 class="foot__subtitle">VR SHOP</h2>
+                    <p class="foot__text">VR glasses light</p>
+                    <p class="foot__text">VR glasses pro</p>
+                    <p class="foot__text">Аксессуары</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <h2 class="foot__apps">Социальные сети</h2>
+                <div class="apps">
+                    <img src="img/Vectori.svg" alt="" class="apps__img">
+                    <img src="img/Vectorf.svg" alt="" class="apps__img">
+                    <img src="img/Vectorvk.svg" alt="" class="apps__img">
+                </div>
+                <hr class="foot__hr">
+            </div>
+        </div>
+        <div class="footer__right">
+            <h2 class="foot__subtitle">Сайт разработан учеником ивановым в целях обучения</h2>
+            <p class="foot__text">Нужна поддержка? Свяжитесь с нашим отделом помощи клиентам</p>
+            <a href="contact.html" class="foot__btn btn btn-light">Связаться</a>
+        </div>
+    </footer>
+</body>
+</html>

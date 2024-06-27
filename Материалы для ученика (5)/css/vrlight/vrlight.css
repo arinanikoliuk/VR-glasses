@@ -1,0 +1,77 @@
+.vr__container{
+    padding: 20px 120px;
+    background: var(--font-color2);
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(5, 400px);
+    grid-template-areas: "i1 i1" "i2 i2" "i3 i3" "i4 ." "i4 i5";
+    color: var(--font-color1);
+}
+.vr__item{
+    display: flex;
+    justify-content: space-between;
+}
+.i1{
+    grid-area: i1;
+}
+.item__subtitle{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.i1 .it__title, .i2 .it__title, .i3 .it__title{
+    font-size: 3rem;
+    align-self: flex-end;
+    text-align: right;
+    width: 50%;
+}
+.i1 .item__hr{
+    height: 3px;
+    width: 100%;
+    opacity: 1;
+}
+.it__text{
+    font-size: 1rem;
+    align-self: flex-end;
+    width: 60%;
+    text-align: right;
+}
+.i2{
+    grid-area: i2;
+}
+.i3{
+    grid-area: i3;
+}
+.i4{
+    grid-area: i4;
+    background: var(--font-color1);
+    color: var(--font-color2);
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+.i4 .it__title{
+    font-size: 2rem;
+}
+.i4 .it__text{
+    align-self: flex-start;
+    text-align: left;
+    width: 80%;
+}
+.i5{
+    grid-area: i5;
+    background: radial-gradient(191.13% 141.42% at 0% 0%, #3479FF 0%, #B462F4 100%);
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 40px;
+    color: var(--font-color2);
+}
+.i5 .it__title{
+    font-size: 2rem;
+    width: 50%;
+    text-align: right;
+}
+.i5 .item__btn{
+    width: 300px;
+}

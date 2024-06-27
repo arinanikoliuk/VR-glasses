@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Файлы проекта/img/favicon.ico">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact__container">
+        <h2 class="contact__title">Связь с поддержкой</h2>
+        <hr class="contact__hr">
+        <form action="#" class="contact">
+            <div class="content">
+                <label for="name" class="cont__label">Имя</label>
+                <input id="name" type="text" placeholder="Иван" name="name" class="cont__input form-control">
+            </div>
+            <div class="content">
+                <label for="email" class="cont__label">Почта</label>
+                <input id="email" type="email" placeholder="sample@mail.com" name="email" class="cont__input form-control">
+            </div>
+            <p class="cont__label">Выберите тему</p>
+            <select class="form-select" aria-label="Default select example">
+                <option value="1">Проблема со шлемом</option>
+                <option value="2">Проблема с доставкой</option>
+                <option value="3">Проблема при использовании шлема</option>
+                <option value="4">Рекомендации по обслуживанию</option>
+                <option value="5">Общие вопросы</option>
+                <option value="6">Жалобы и предложения</option>
+            </select>
+            <p class="cont__label">Доп комментарий</p>  
+            <textarea name="comment" rows="5" class="textarea form-control"></textarea>
+            <button class="cont__btn btn btn-primary">Оформить</button>
+        </form>
+    </div>
+</body>
+</html>

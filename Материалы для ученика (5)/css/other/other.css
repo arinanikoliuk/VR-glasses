@@ -1,0 +1,62 @@
+.other {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 90px;
+}
+.other__container {
+    background: url("other-bg.png") center/cover no-repeat;
+    width: 60%;
+    height: 100%;
+}
+.other__list {
+    position: relative;
+    top: 140px;
+    left: 70%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(2, 260px);
+    gap: 30px;
+    grid-template-areas: "cd1 cd2" "cd3 cd4";
+}
+.other__card {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: var(--card-color);
+    padding: 15px;
+}
+.other__card:hover::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(20px, 20px);
+    content: "Временно недоступен";
+    color: var(--font-color1);
+    background: url("other-unavalible-icon.svg") right 20px center/30px no-repeat, var(--font-color2); 
+    box-shadow: 2px 2px 15px black;
+    padding: 15px;
+    width: 300px;
+    z-index: 5000;
+}
+.other__title {
+    font-size: 1.5rem;
+    color: var(--font-color2);
+}
+.other__text {
+    font-size: 1rem;
+    color: var(--font-color2);
+}
+.cd1{
+    grid-area: cd1;
+}
+.cd2{
+    grid-area: cd2;
+}
+.cd3{
+    grid-area: cd3;
+}
+.cd4{
+    grid-area: cd4;
+}

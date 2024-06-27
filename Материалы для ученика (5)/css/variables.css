@@ -1,0 +1,9 @@
+:root{
+    --font-color1:black;
+    --font-color2:white;
+    --active-color:#0D6EFD;
+    --card-color:#222;
+    --gradient1:radial-gradient(191.13% 141.42% at 0% 0%, #3479FF 0%, #B462F4 100%);
+    --gradient2:radial-gradient(191.13% 141.42% at 0% 0%, #FF450B 0%, #B462F4 100%);
+    --gradient3:radial-gradient(191.13% 141.42% at 0% 0%, #FF8C21 0%, #FFDB5C 100%);
+}

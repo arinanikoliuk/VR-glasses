@@ -1,0 +1,43 @@
+.header{
+   padding-top: 300px;
+   text-align: center;
+}
+.header__content{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 140px 5px 140px;
+}
+.header__grafics{
+    position: relative;
+}
+.header__circle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    background: conic-gradient(from 180deg at 50% 50%, #0DC5FF 0deg, #2B416B 360deg);
+}
+.header__circle1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    background: conic-gradient(from 57deg at 50% 50%, #00FFD1 0deg, rgba(0, 255, 209, 0.00) 360deg);
+    animation: moving 10s linear 0s infinite;
+}
+.bg__photo{
+    width: 100%;
+}
+@keyframes moving{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
